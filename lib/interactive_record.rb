@@ -4,7 +4,8 @@ require 'active_support/inflector'
 class InteractiveRecord
   
   def self.table_name 
-    self.class.table_name.downcase.pluralize 
+    self.to_s.downcase.pluralize
+  end
     
   end 
   
